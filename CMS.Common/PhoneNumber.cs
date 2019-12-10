@@ -1,13 +1,16 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
+using System.Text;
 
-namespace InternalLegacySystem
+namespace CMS.Common
 {
     public class PhoneNumber : IEquatable<PhoneNumber>
     {
         public string AreaCode { get; set; }
         public string Prefix { get; set; }
         public string LineNumber { get; set; }
+        public string Type { get; set; }
 
         public bool Equals([AllowNull] PhoneNumber other)
         {

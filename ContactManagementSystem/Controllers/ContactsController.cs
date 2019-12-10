@@ -1,21 +1,21 @@
-﻿using InternalLegacySystem;
+﻿using CMS.Common;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ContactManagementSystem.Controllers
 {
     public class ContactsController : Controller
     {
-        private ContactManager _contactManager;
+        private IContactProvider _contactProvider;
 
-        public ContactsController()
+        public ContactsController(IContactProvider contactProvider)
         {
-            _contactManager = new ContactManager();
+            _contactProvider = contactProvider;
         }
 
         // GET: Contact
         public ActionResult Index()
         {
-            return View(_contactManager.GetContacts());
+            return View(_contactProvider.Contacts);
         }
 
         // GET: Contact/Details/5
@@ -25,6 +25,6 @@ namespace ContactManagementSystem.Controllers
         }
 
         [ViewData]
-        public string Provider => _contactManager.GetType().FullName;
+        public string Provider => _contactProvider.GetType().FullName;
     }
 }

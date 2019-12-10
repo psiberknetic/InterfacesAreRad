@@ -1,4 +1,4 @@
-﻿@model IEnumerable<InternalLegacySystem.Contact>
+﻿@model IEnumerable<CMS.Common.Contact>
 
 @{
     ViewData["Title"] = "Index";
@@ -13,13 +13,10 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.ContactName)
+                @Html.DisplayNameFor(model => model.FirstName)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.WorkPhone)
-            </th>
-            <th>
-                @Html.DisplayNameFor(model => model.HomePhone)
+                @Html.DisplayNameFor(model => model.LastName)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Email)
@@ -32,16 +29,13 @@
         {
             <tr>
                 <td>
-                    @item.ContactName.ToString()
+                    @Html.DisplayFor(_ => item.FirstName)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.WorkPhone)
+                    @Html.DisplayFor(_ => item.LastName)
                 </td>
                 <td>
-                    @Html.DisplayFor(modelItem => item.HomePhone)
-                </td>
-                <td>
-                    @Html.DisplayFor(modelItem => item.Email)
+                    @Html.DisplayFor(_ => item.Email)
                 </td>
                 <td>
                     @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |

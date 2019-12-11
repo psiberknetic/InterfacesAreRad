@@ -198,6 +198,38 @@ this.ParsingNames("Madonna", "Madonna", "", "", ((string[])(null)));
 this.ParsingNames("Keith Danger Dahlby", "Keith", "Danger", "Dahlby", ((string[])(null)));
 #line hidden
         }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Parsing Names: Johnny B. Goode")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Name Parsing")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("mytag")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Johnny B. Goode")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:name", "Johnny B. Goode")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:first", "Johnny")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:middle", "B")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:last", "Goode")]
+        public virtual void ParsingNames_JohnnyB_Goode()
+        {
+#line 6
+this.ParsingNames("Johnny B. Goode", "Johnny", "B", "Goode", ((string[])(null)));
+#line hidden
+        }
+        
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestMethodAttribute()]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.DescriptionAttribute("Parsing Names: Amanda Huggin-Kiss")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("FeatureTitle", "Name Parsing")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestCategoryAttribute("mytag")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("VariantName", "Amanda Huggin-Kiss")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:name", "Amanda Huggin-Kiss")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:first", "Amanda")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:middle", "")]
+        [Microsoft.VisualStudio.TestTools.UnitTesting.TestPropertyAttribute("Parameter:last", "Huggin-Kiss")]
+        public virtual void ParsingNames_AmandaHuggin_Kiss()
+        {
+#line 6
+this.ParsingNames("Amanda Huggin-Kiss", "Amanda", "", "Huggin-Kiss", ((string[])(null)));
+#line hidden
+        }
     }
 }
 #pragma warning restore

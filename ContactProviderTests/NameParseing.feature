@@ -9,8 +9,10 @@ Scenario Outline: Parsing Names
 	Then I should get the following <first>, <middle>, and <last>
 
 	Examples:
-		| name                | first   | middle | last     |
-		| Steve C Harvey      | Steve   | C      | Harvey   |
-		| Mariah Williams     | Mariah  |        | Williams |
-		| Madonna             | Madonna |        |          |
-		| Keith Danger Dahlby | Keith   | Danger | Dahlby   |
+		| name                | first   | middle | last        |
+		| Steve C Harvey      | Steve   | C      | Harvey      |
+		| Mariah Williams     | Mariah  |        | Williams    |
+		| Madonna             | Madonna |        |             |
+		| Keith Danger Dahlby | Keith   | Danger | Dahlby      |
+		| Johnny B. Goode     | Johnny  | B      | Goode       |
+		| Amanda Huggin-Kiss  | Amanda  |        | Huggin-Kiss |

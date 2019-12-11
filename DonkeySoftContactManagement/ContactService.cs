@@ -7,11 +7,9 @@ namespace DonkeySoftContactManagement
 {
     public class ContactService
     {
-        readonly IEnumerable<Contact> _contacts = new[]{
+        private readonly IEnumerable<Contact> _contacts = new[]{
             new Contact{
-                FirstName = "Nydia",
-                MiddleName = "Johannes",
-                LastName = "McFarland",
+                Name = "Nydia Johannes McFarland",
                 Email = "corbin_keebl@hotmail.com",
                 HomeAddressLine1 = "3117 Thomas Street",
                 HomeCity = "Northbrook",
@@ -28,9 +26,7 @@ namespace DonkeySoftContactManagement
                 IsInvestor = false
             },
             new Contact{
-                FirstName = "Kenny",
-                MiddleName = "Vivian",
-                LastName = "Paige",
+                Name = "Kenny Vivian Paige",
                 Email = "chadrick.kirl@gmail.com",
                 HomeAddressLine1 = "3896 Thomas Street",
                 HomeCity = "Evanston",
@@ -47,9 +43,7 @@ namespace DonkeySoftContactManagement
                 IsInvestor = false
             },
             new Contact{
-                FirstName = "William",
-                MiddleName = "Claude",
-                LastName = "Schippers",
+                Name = "William Claude Schippers",
                 Email = "chester2006@yahoo.com",
                 HomeAddressLine1 = "4513 Mulberry Street",
                 HomeCity = "Houston",
